@@ -11,7 +11,7 @@ struct elemento {
   int maximo; ///<el máximo
 };
 
-ostream& operator << (ostream &o,const elemento &p)
+inline ostream& operator << (ostream &o,const elemento &p)
 {
     o << "(Elemento: " << p.ele << ", maximo: " << p.maximo << ")";
     return o;

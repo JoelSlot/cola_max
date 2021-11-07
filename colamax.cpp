@@ -2,7 +2,7 @@
 #include "pila.h"
 
 ColaMax::ColaMax(){
-  
+
 }
 
 ColaMax::~ColaMax(){
@@ -28,8 +28,11 @@ void ColaMax::poner(int newNumber){
     if(newNumber > aux.tope().maximo){
       elemento.maximo = newNumber;
     }
+    else{
+      elemento.maximo = aux.tope().maximo;
+    }
   } else {
-    elemento.maximo = aux.tope().maximo;
+    elemento.maximo = elemento.ele;
   }
 
   aux.poner(elemento);
