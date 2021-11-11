@@ -1,8 +1,11 @@
 all: colamax
 
-colamax: main.cpp colamax.cpp
-	g++ main.cpp colamax.cpp -o colamax
+colamax: src/main.cpp src/colamax.cpp
+	g++ src/main.cpp src/colamax.cpp -o bin/colamax
 
 exe: 
-	chmod 777 colamax
-	./colamax
+	chmod 777 bin/colamax
+	bin/./colamax
+
+clean:
+	rm -r bin/*

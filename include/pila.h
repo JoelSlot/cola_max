@@ -123,6 +123,6 @@ class Pila{
     }
 };
 
-#include "pila.cpp"
+#include "../src/pila.cpp"
 
 #endif // __Pila_H__

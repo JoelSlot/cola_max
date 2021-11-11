@@ -1,7 +1,7 @@
 
 #include<iostream>
-#include"colamax.h"
-#include "pila.h"
+#include "../include/colamax.h"
+#include "../include/pila.h"
 
 
 
